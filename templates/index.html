@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TranscriptTraversal</title>
+    <link rel="stylesheet" type="text/css" href="static/transcript-traversal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            TranscriptTraversal
+        </h1>
+        <p class="subtitle">
+            An open-source tool for parsing 2020 Democratic primary debate transcripts shared online by <a href="https://www.nytimes.com/section/politics" target="_blank">The New York Times</a> into better structured data (.json) that is more accessible and useful.
+        </p>
+        <div>
+            <form id="transcript-url-form" name="transcript-url-form" method="post" enctype="multipart/form-data">
+                <input id="transcript-url" name="transcript-url" type="url" required placeholder="NYT transcript URL...">
+                <input id="requested-data" name="requested-data" type="hidden" >
+                <button onclick="var requestedData = document.getElementById('requested-data'); requestedData.value = 'structured-transcript'; var form = document.forms['transcript-url-form']; form.submit()" type="button">structured transcript</button>
+                <button onclick="var requestedData = document.getElementById('requested-data'); requestedData.value = 'word-count'; var form = document.forms['transcript-url-form']; form.submit()" type="button">word count</button>
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer-container">
+        <span class="footer-left">Made with ❤️ by <a href="mailto:adpena@gmail.com?subject=TranscriptTraversal" target="_blank">Alejandro Peña</a> (GitHub) using →</span>
+        <span class="footer-right">
+            <span><a href="https://www.python.org/" target="_blank">Python 3</a></span>
+            <span><a href="http://flask.pocoo.org/" target="_blank">Flask</a></span>
+            <span><a href="https://click.palletsprojects.com/en/7.x/" target="_blank">Click</a></span>
+            <span><a href="https://3.python-requests.org/" target="_blank">Requests</a></span>
+            <span><a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank">BeautifulSoup</a></span>
+            <span><a href="https://github.com/aaronsw/html2text" target="_blank">html2text</a></span>
+            <span><a href="https://github.com/trentm/python-markdown2" target="_blank">Markdown2</a></span>
+            <span><a href="https://www.pyinstaller.org/" target="_blank">PyInstaller</a></span>
+            <span><a href="https://repl.it/site/about" target="_blank">Repl.it</a></span>
+            <span><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></span>
+        </span>
+    </div>
+</footer>
+</html>

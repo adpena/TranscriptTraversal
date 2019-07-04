@@ -1,0 +1,49 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    width: 100%;
+    min-width: 350px;
+    margin: 0 0 100px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    margin: 50px;
+}
+
+.footer-container {
+    margin: 35px;
+    padding-bottom: 5px;
+}
+
+.subtitle {
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right
+}
+
+.footer-right span {
+    padding: 5px;
+}
