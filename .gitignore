@@ -16,10 +16,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
-<<<<<<< HEAD
 dist/
-=======
->>>>>>> bf2a19f0db3e678cfa98ea7c57328ddb04ca9d1f
 develop-eggs/
 downloads/
 eggs/
